@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+      --red: var(#cf2724);
+      --darkred: var(#a61416);
+      --yellow: var(#f0b21a);
+      --darkcolor: var(#373b3c);
+  }
+  body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    background-color: var(--darkred);
+  }
+  header {
+    padding: 30px 55px;
+    background-color: var(--darkred);
+    color: var(--yellow);
+  }
+
+  header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #ffffff;
+    margin: 0;
+    display: block;
+  }
