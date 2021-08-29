@@ -3,21 +3,26 @@
     padding: 0;
     box-sizing: border-box;
   }
-  :root {
-      --red: var(#cf2724);
-      --darkred: var(#a61416);
-      --yellow: var(#f0b21a);
-      --darkcolor: var(#373b3c);
-  }
+
   body {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #a61416;
+    font-size: x-large;
+    font-family:'Courier New', Courier, monospace;
     letter-spacing: 1px;
-    background-color: var(--darkred);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
   }
+
+  /* HEADER / NAV BAR STYLES START */
+  
   header {
     padding: 30px 55px;
-    background-color: var(--darkred);
-    color: var(--yellow);
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
   }
 
   header h1 {
@@ -25,5 +30,122 @@
     font-size: 36px;
     color: #ffffff;
     margin: 0;
+    border-right: 5px;
+  }
+
+header a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+  header nav {
+    margin: 7px 10px;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+/* HEADER / NAVBAR STYLES END */
+
+
+
+/* FOOTER STYLES START */
+footer {
+  background: #000000;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer h2 {
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0;
+}
+
+footer a {
+  color: #ffffff;
+}
+/* END FOOTER STYLES */
+/* STYLE ALL SECTION TAGS */
+  header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+ }
+
+  /* SECTION TITLE STYLES START */
+
+  .section-title {
+    font-size: 55px;
+    color: #a61416;
+    margin-bottom: unset;
+    margin-left: 5px;
+    padding: 0 20px 30px 20px;
+    display: inline-block;
+    border-bottom: 3px solid;
+  }
+  
+  .primary-border {
+    border-color: #a61416;
+  }
+  
+  .secondary-border {
+    border-color: #cf2724;
+  }
+
+
+  section {
+    padding: 100px;
     display: block;
+
+  }
+  
+ 
+  .section-content img {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    align-content: flex-start;
+    margin: 0px auto;
+  }
+  section p {
+    font-style: oblique;
+    font-display: center;
+    border: solid;
+    display: grid;
+    text-align: right;
+  }
+
+  .my-works a {
+    background-image: url('./assets/images/runbuddysc.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+    justify-content: center;
+    font-size: larger;
+  }
+
+  .about-me .my-works .my-skills .my-experience .my-contact {
+    width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+
+
+  .section-content {
+    margin-top: 55px;
+    justify-content: center;
   }
