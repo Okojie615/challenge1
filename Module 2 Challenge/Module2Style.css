@@ -6,16 +6,19 @@
 
   body {
     color: #a61416;
+    background-color: rgb(0, 0, 0);
     font-size: x-large;
+    font-weight: bold;
     font-family:'Courier New', Courier, monospace;
     letter-spacing: 1px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(./tnselogo.PNG);
+    background-attachment: fixed;
   }
 
-  /* HEADER / NAV BAR STYLES START */
-  
+  /* Header and Nav Styling */
   header {
     padding: 30px 55px;
     background-color: #000000;
@@ -49,11 +52,17 @@ header a{
     align-items: center;
     list-style: none;
   }
-/* HEADER / NAVBAR STYLES END */
+
+  header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+ }
+/* Header and Nav End*/
 
 
 
-/* FOOTER STYLES START */
+/* Footer Styling */
 footer {
   background: #000000;
   padding: 40px 35px;
@@ -64,7 +73,10 @@ footer {
   line-height: 1.5;
   text-align: right;
 }
-
+footer img {
+  background-attachment:local;
+  background-position: 100%;
+}
 footer h2 {
   color: #ffffff;
   font-size: 30px;
@@ -74,16 +86,8 @@ footer h2 {
 footer a {
   color: #ffffff;
 }
-/* END FOOTER STYLES */
-/* STYLE ALL SECTION TAGS */
-  header nav ul li a {
-    margin: 0 30px;
-    font-weight: lighter;
-    font-size: 1.55vw;
- }
-
-  /* SECTION TITLE STYLES START */
-
+/* End of Footer Styling */
+/* Section Styling */
   .section-title {
     font-size: 55px;
     color: #a61416;
@@ -122,7 +126,9 @@ footer a {
     font-display: center;
     border: solid;
     display: grid;
-    text-align: right;
+    text-align: left;
+    text-shadow: 0px 0px 7px rgb(0, 0, 0);
+    text-decoration: black;
   }
 
   .my-works a {
@@ -149,3 +155,67 @@ footer a {
     margin-top: 55px;
     justify-content: center;
   }
+/*End of Section Styling*/
+/*Media Quieries*/
+  @media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2 {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .section-title {
+      width: 80%;
+    }
+    
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    .section-title {
+      width: 95%;
+    }
+    .about-me {
+      text-align: center;
+    }
+    .my-skills {
+      text-align: center;
+    }
+    .my-experience {
+      text-align: center;
+    }
+    .my-works {
+      text-align: center;
+    }
+    .my-contact {
+      text-align: center;
+    }
+  }
+  
